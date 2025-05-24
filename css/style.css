@@ -1,0 +1,186 @@
+/* Стили для всего тела страницы */
+body {
+    max-width: 800px;         /* Ограничиваем ширину для удобства чтения */
+    margin: 20px auto;        /* Центрируем страницу и добавляем отступы */
+    padding: 20px;
+    background-color: #f9f9f9; /* Светлый фон */
+    font-family: Arial, sans-serif; /* Простой читаемый шрифт */
+    color: #333;              /* Тёмно-серый цвет текста */
+}
+
+/* Заголовок сайта */
+header h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Меню навигации */
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Разделитель */
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Основной контент */
+main {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Подвал сайта */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* Переключатель языка */
+.lang-switcher {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.lang-switcher:hover {
+    background-color: #1f6391;
+}
+
+/* Стили для таблиц гостевой книги */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Контейнер для чата */
+#chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#chat-container input[type="text"] {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+#chat-container button {
+    cursor: pointer;
+}
+
+/* Контейнер для форм */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Переключение форм (вход/регистрация) */
+.form-switch {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-switch button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 0;
+}
+
+/* Сообщения об ошибках и успехе */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* Подсказка для приватных сообщений */
+#privateMessageHint {
+    color: #888;
+    font-size: 12px;
+    margin-top: 4px;
+    font-style: italic;
+}
+.news-image-container {
+    max-width: 800px;
+    width: 65%;             /* или 100%, как нужно */
+    margin: 20px 0;         /* убираем auto, чтобы не центрировался */
+    text-align: left;       /* выравнивание содержимого по левому краю */
+}
+
+.news-image-container img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;         /* чтобы убрать пробелы снизу */
+}
+
+
+
+
+

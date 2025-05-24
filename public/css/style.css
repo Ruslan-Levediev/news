@@ -1,0 +1,250 @@
+/* Основные стили страницы */
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+.lang-switcher {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    z-index: 1000;
+}
+.lang-switcher:hover {
+    background-color: #1f6391;
+}
+
+/* Стили для таблиц гостевой книги */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.styled-table thead tr {
+    background-color: #2980b9;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Контейнер для чата */
+#chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#chat-container input[type="text"] {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+#chat-container button {
+    cursor: pointer;
+}
+
+/* Контейнер для форм */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Переключение форм (вход/регистрация) */
+.form-switch {
+    text-align: center;
+    margin-top: 15px;
+}
+.form-switch button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 0;
+}
+
+/* Сообщения об ошибках и успехе */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+.success-message {
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* Подсказка для приватных сообщений */
+#privateMessageHint {
+    color: #888;
+    font-size: 12px;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+/* --- Новости --- */
+
+/* Главные новости — крупные и выделенные */
+.main-news {
+    background: #f0f8ff; /* Светло-голубой фон */
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.main-news h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-top: 0;
+}
+.main-news .news-image-container {
+    max-width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+.main-news .news-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Обычные новости — компактные, картинки поменьше */
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.news-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 0;
+}
+.news-item .news-image-container {
+    max-width: 250px;
+    margin: 10px 0;
+}
+.news-item .news-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* На странице всех новостей (/news) — все новости с одинаковыми картинками */
+.news-list .news-item .news-image-container {
+    max-width: 300px;
+    margin: 10px 0;
+}
+.news-list .news-item .news-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* На странице одной новости (/news/{id}) — большая картинка */
+.news-detail .news-image-container {
+    max-width: 100%;
+    margin: 20px 0;
+}
+.news-detail .news-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Кнопка "Читать далее" и "Всі новини" */
+.read-more, .all-news-link {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.read-more:hover, .all-news-link:hover {
+    background: #0056b3;
+    color: #fff;
+}
+.all-news-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
